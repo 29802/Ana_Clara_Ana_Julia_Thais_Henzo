@@ -14,10 +14,6 @@
     --text-color: #1b1b1b;
     --bg-color: #ffff;
     --box-shadow: 2px 2px 10px 4px rgba(66, 179, 177, 0.15);
-    --color-neutral-0: #083148;
-    --color-neutral-10: #083148;
-    --color-neutral-30: #ffffff;
-    --color-neutral-40: #f5f5f5;
 }
 
 html {
@@ -90,7 +86,6 @@ section nav ul li a:hover{
     color: var(--border);
 }
 
-/* ------- */
 
 section nav .icon i{
     font-size: 18px;
@@ -111,7 +106,7 @@ section nav .icon i:hover{
 
 /* ---------------------------------------------------------------------------- */
 
-/*About*/
+/*home*/
 
 .home{
     width: 100%;
@@ -143,8 +138,6 @@ section nav .icon i:hover{
     font-family: mv boli;
 }
 
-
-
 .home .home_main .home_text p{
     width: 600px;
     text-align: justify;
@@ -164,12 +157,7 @@ section nav .icon i:hover{
 
 
 
-
-
-
-
-
-
+/* ----------------------------------------------------------------------------------- */
 
 /*About*/
 
@@ -380,11 +368,7 @@ section nav .icon i:hover{
 }
 
 
-/* Estilo menu mobile */
-
 /* ----------------------------------------------------------------------------- */
-
-
 /*Combo*/
 
 .Combo{
@@ -809,7 +793,7 @@ section nav .icon i:hover{
 /* ------------------------------------------------------------- */
 /* footer */
 
-h3{
+footer h3{
     color: #ffffff;
 }
 
@@ -829,7 +813,7 @@ footer {
 }
 
 #footer_content {
-    background-color: var(--color-neutral-10);
+    background-color: var(--menu);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 3rem 3.5rem;
@@ -851,7 +835,7 @@ footer {
     justify-content: center;
     height: 2.5rem;
     width: 2.5rem;
-    color: var(--color-neutral-40);
+    color: var(--bg-color);
     /* border-radius: 50%; */
     transition: all 0.4s;
 }
@@ -884,7 +868,7 @@ footer {
 }
 
 .footer-list .footer-link {
-    color: var(--color-neutral-30);
+    color: var(--bg-color);
     transition: all 0.4s;
 }
 
@@ -895,32 +879,20 @@ footer {
 #footer_copyright {
     display: flex;
     justify-content: center;
-    background-color: var(--color-neutral-0);
+    background-color: var(--bg-color);
     font-size: 0.9rem;
     padding: 1.5rem;
     font-weight: 100;
 }
-
-/* Restante do seu CSS continua aqui */
-/* Mantém o texto do menu visível em telas menores */
 section nav ul li a {
     font-size: 17px; /* Restaura o tamanho do texto */
 }
 
 
 
-
-
-
-
-
-
-/*  */
+/* ---------------------------------------------------------------------------------------------- */
 /* Media 991px */
 @media screen and (max-width: 991px) {
-    
-    
-    
     
     section nav {
         position: fixed;
@@ -958,7 +930,7 @@ section nav ul li a {
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */    
     
     
-    /* main */
+    /* home */
     .home{
         width: 100%;
         height: 100vh;
@@ -1217,7 +1189,7 @@ display: none;
       width: 100%;
     }
 
-    
+
     /* ---------------------------------------------------------------------------------------------------------------- */
     /* time */
 
