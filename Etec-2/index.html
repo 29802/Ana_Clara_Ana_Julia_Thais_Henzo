@@ -16,22 +16,73 @@
 
 
 <!-- Menu responsivo -->
-    <section id="Home">
-        <nav>
+
+        <!-- <header id="header">
             <div class="logo">
                 <a href="#Home"><img src="./img/logo.ham.png" class="menu-icon"></a>
             </div>
-
-            <ul class="nav_menu">
+            <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#populares">Populares</a></li>
                 <li><a href="#Menu">Menu</a></li>
-                <li><a href="#Combo">Combos</a></li>
+                <li><a href="#Combo">Combos</a></li>    
                 <li><a href="#About">Quem somos</a></li>
                 <li><a href="#Review">Avaliações</a></li>
                 <li><a href="#Pedido">Peça agora</a></li>
                 <li><a href="#team">Nosso Time</a></li>
             </ul>
+
+                <div class="icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </nav>
+        </header>
+
+        <script>
+
+            const btnMobile = document.getElementById('btn-mobile');
+
+            function toggleMenu(event) {
+            if (event.type === 'touchstart') event.preventDefault();
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+            const active = nav.classList.contains('active');
+            event.currentTarget.setAttribute('aria-expanded', active);
+            if (active) {
+                event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+            } else {
+                event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+            }
+            }
+
+            btnMobile.addEventListener('click', toggleMenu);
+            btnMobile.addEventListener('touchstart', toggleMenu);
+
+        </script> -->
+
+    <section id="Home">
+        <nav>
+            <div class="logo">
+                <a href="#Home"><img src="./img/logo.ham.png" class="menu-icon"></a>
+            </div>
+            <ul class="nav_menu">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#populares">Populares</a></li>
+                <li><a href="#Menu">Menu</a></li>
+                <li><a href="#Combo">Combos</a></li>    
+                <li><a href="#About">Quem somos</a></li>
+                <li><a href="#Review">Avaliações</a></li>
+                <li><a href="#Pedido">Peça agora</a></li>
+                <li><a href="#team">Nosso Time</a></li>
+            </ul>
+         
+
 
             <div class="icon">
                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -39,7 +90,7 @@
                 <i class="fa-solid fa-cart-shopping"></i>
             </div>
             
-        </nav>
+        </nav> 
 
 
         
@@ -568,63 +619,63 @@
 
     <div class="Combo_image_box">
         <div class="Combo_image">
-            <img src="img.ham/combo1.jpeg" height="350px">
+            <img src="img.ham/Captura de Tela (26).png" height="350px">
 
-            <h3>Food</h3>
+            <h3>Combo Crunchy Onion Rings</h3>
             <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam 
+                Anéis de cebola crocantes e saborosos, servidos com molho barbecue para mergulhar, acompanhados de um hambúrguer clássico de carne bovina, queijo, alface, tomate e batatas fritas.
             </p>
-            <a href="#" class="Combo_btn">Order Now</a>
+            <a href="#" class="Combo_btn">Pedir agora</a>
         </div>
 
         <div class="Combo_image">
-            <img src="img.ham/combo2.jpg" height="350px">
+            <img src="img.ham/Captura de Tela (22).png" height="350px">
 
-            <h3>Food</h3>
+            <h3>Combo Caliente</h3>
             <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam 
+                Um hambúrguer temperado com pimenta jalapeño, queijo pepper jack derretido, pimentão grelhado, alface, tomate e molho de chipotle, acompanhado de fritas crocantes.
             </p>
-            <a href="#" class="Combo_btn">Order Now</a>
+            <a href="#" class="Combo_btn">Pedir agora</a>
         </div>
 
         <div class="Combo_image">
-            <img src="img.ham/combo3.jpeg" height="350px">
+            <img src="img.ham/Captura de Tela (23).png" height="350px">
 
-            <h3>Food</h3>
+            <h3>Combo Mineiro Burguer</h3>
             <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam 
+                Um hambúrguer suculento de carne bovina grelhada, coberto com queijo cheddar derretido, acompanhado de batatas fritas crocantes. Uma combinação clássica e reconfortante para os amantes de queijo e hambúrguer.
             </p>
-            <a href="#" class="Combo_btn">Order Now</a>
+            <a href="#" class="Combo_btn">Pedir agora</a>
         </div>
 
         <div class="Combo_image">
-            <img src="img.ham/combo4.jpg" height="350px">
+            <img src="img.ham/Captura de Tela (29).png" height="350px">
 
-            <h3>Food</h3>
+            <h3>Combo BBQ</h3>
             <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam 
+                Um hambúrguer coberto com molho barbecue, bacon crocante, queijo cheddar derretido, cebola frita, alface, tomate e maionese defumada, servido com anéis de cebola e uma porção de fritas.
             </p>
-            <a href="#" class="Combo_btn">Order Now</a>
+            <a href="#" class="Combo_btn">Pedir agora</a>
         </div>
 
         <div class="Combo_image">
-            <img src="img.ham/combo5.jpeg" height="350px">
+            <img src="img.ham/Captura de Tela (32).png" height="350px">
 
-            <h3>Food</h3>
+            <h3>Combo Simpão</h3>
             <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam 
+                Um suculento hambúrguer de carne bovina grelhada, servido em um pão de hambúrguer tostado. É acompanhado por uma fatia de queijo cheddar derretido, alface crocante, tomate fresco, maionese e uma porção de fritas.
             </p>
-            <a href="#" class="Combo_btn">Order Now</a>
+            <a href="#" class="Combo_btn">Pedir agora</a>
         </div>
 
         <div class="Combo_image">
-            <img src="img.ham/combo6.jpeg" height="350px" >
+            <img src="img.ham/Captura de Tela (30).png" height="350px" >
 
-            <h3>Food</h3>
+            <h3>Combo Salada Burguer</h3>
             <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam 
+                Um hambúrguer suculento acompanhado de uma salada fresca de alface, tomate e pepino, regada com molho de sua escolha. Acompanha também uma porção de batatas fritas.
             </p>
-            <a href="#" class="Combo_btn">Order Now</a>
+            <a href="#" class="Combo_btn">Pedir agora</a>
         </div>
 
     </div>
