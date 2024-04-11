@@ -453,6 +453,9 @@ section nav .icon i:hover{
     width: 100%;
     height: 100vh;
     padding: 70px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .review h1{
@@ -759,7 +762,12 @@ section nav .icon i:hover{
     color:var(--border);
 }
 
-
+@media screen and (max-width: 768px) {
+    .team .team_box .profile {
+        width: calc(100% - 40px); /* Ajusta a largura para ocupar toda a largura da tela com margem entre as caixas */
+        max-width: none; /* Remove a largura máxima */
+    }
+}
 
 /* ---------------------------------------- */
 
@@ -1137,3 +1145,13 @@ display: none;
     }
     
 }
+
+ /* ----------------------------------------------------------------------------------------------------------------------- */
+    /* review */
+
+    @media screen and (max-width: 768px) {
+        .review .review_box .review_card {
+            width: calc(100% - 30px);
+            margin: 0 15px 30px;
+        }
+    }
