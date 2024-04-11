@@ -1,6 +1,4 @@
 
-
-
 * {
     margin: 0;
     padding: 0;
@@ -115,10 +113,76 @@ section nav .icon i:hover{
 
 /*About*/
 
-.about{
+.home{
     width: 100%;
     height: 100vh;
     padding: 60px 0;
+}
+
+.home .home_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.home .home_main .image img{
+    width: 800px;
+    position: relative;
+    top: 50px;
+}
+
+.home .home_main .img img{
+    width: 800px;
+    position: relative;
+    top: 60px;
+}
+
+.home .home_main .home_text h1 span{
+    color: var(--border);
+    margin-right: 15px;
+    font-family: mv boli;
+}
+
+.home .home_main .home_text h1{
+    font-size: 55px;
+    margin-bottom: 10px;
+    margin-right: 0;
+}
+
+
+.home .home_main .home_text p{
+    width: 600px;
+    text-align: justify;
+    margin-right: 180px;
+    line-height: 22px;
+}
+
+/* Botão do "peça agora" */
+.home .home_btn{
+    background: var(--border);
+    padding: 12px 25px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    left: 53%;
+    bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+/*About*/
+
+.about{
+    width: 100%;
+    height: 100vh;
+    margin-top: -60px;
 }
 
 .about .about_main{
@@ -152,6 +216,7 @@ section nav .icon i:hover{
 }
 
 .about .about_main .about_text h3{
+    color: var(--text-color);
     font-size: 55px;
     margin: 0 0 50px 0;
     margin-right: 90px;
@@ -185,116 +250,9 @@ section nav .icon i:hover{
 }
 
 
-
 /* -------------------------------------------------------------------- */
 
 /*Menu*/
-
-/* body,
-ul {
-  margin: 0px;
-  padding: 0px;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-  font-family: sans-serif;
-}
-
-a:hover {
-  background: rgba(0, 0, 0, 0.05);
-}
-
-#logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-#header {
-  box-sizing: border-box;
-  height: 70px;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #e7e7e7;
-}
-
-#menu {
-  display: flex;
-  list-style: none;
-  gap: 0.5rem;
-}
-
-#menu a {
-  display: block;
-  padding: 0.5rem;
-}
-
-#btn-mobile {
-  display: none;
-}
-
-@media (max-width: 600px) {
-  #menu {
-    display: block;
-    position: absolute;
-    width: 100%;
-    top: 70px;
-    right: 0px;
-    background: #e7e7e7;
-    transition: 0.6s;
-    z-index: 1000;
-    height: 0px;
-    visibility: hidden;
-    overflow-y: hidden;
-  }
-  #nav.active #menu {
-    height: calc(100vh - 70px);
-    visibility: visible;
-    overflow-y: auto;
-  }
-  #menu a {
-    padding: 1rem 0;
-    margin: 0 1rem;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
-  }
-  #btn-mobile {
-    display: flex;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    border: none;
-    background: none;
-    cursor: pointer;
-    gap: 0.5rem;
-  }
-  #hamburger {
-    border-top: 2px solid;
-    width: 20px;
-  }
-  #hamburger::after,
-  #hamburger::before {
-    content: '';
-    display: block;
-    width: 20px;
-    height: 2px;
-    background: currentColor;
-    margin-top: 5px;
-    transition: 0.3s;
-    position: relative;
-  }
-  #nav.active #hamburger {
-    border-top-color: transparent;
-  }
-  #nav.active #hamburger::before {
-    transform: rotate(135deg);
-  }
-  #nav.active #hamburger::after {
-    transform: rotate(-135deg);
-    top: -7px;
-  }
-} */
 
 .menu{
     width: 100%;
@@ -333,7 +291,7 @@ a:hover {
 }
 
 .menu .menu_box .menu_card{
-    width: 350px;
+    width: 325px;
     height: 490px;
     padding-top: 10px;
     margin-bottom: 20px;
@@ -415,6 +373,7 @@ a:hover {
 }
 
 .menu .menu_box .menu_card .menu_info h3{
+    color: var(--text-color);
     text-align: center;
     margin-top: 10px;
 }
@@ -455,6 +414,7 @@ a:hover {
 .Combo{
     width: 100%;
     padding: 70px 0;
+    margin-top: -90px;
 }
 
 .Combo h1{
@@ -562,9 +522,6 @@ a:hover {
     width: 100%;
     height: 100vh;
     padding: 70px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .review h1{
@@ -598,7 +555,7 @@ a:hover {
 
 .review .review_box .review_card{
     width: 350px;
-    height: 550px;
+    height: 535px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.5);
     border-radius: 8px;
     padding: 8px 20px;
@@ -764,7 +721,7 @@ a:hover {
 
 .team{
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     background-image: url(img/bg1.jpg);
     background-size: cover;
     background-position: center;
@@ -795,20 +752,20 @@ a:hover {
 }
 
 .team .team_box{
-    width: 100%;
+    width: 95%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    top: 10%;
+    top: 13%;
 }
 
 .team .team_box .profile{
-    width: 310px;
+    width: 320px;
     height: 310px;
     border-radius: 50%;
-    margin: 0 20px;
+    margin: 0 15px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -871,28 +828,17 @@ a:hover {
     color:var(--border);
 }
 
-@media screen and (max-width: 768px) {
-    .team .team_box .profile {
-        width: calc(100% - 40px); /* Ajusta a largura para ocupar toda a largura da tela com margem entre as caixas */
-        max-width: none; /* Remove a largura máxima */
-    }
-}
-
-/* ---------------------------------------- */
 
 
-
+/* ------------------------------------------------------------- */
 /* footer */
-
 
 h3{
     color: #ffffff;
 }
 
 footer {
-    width: 100%;
-    
-    
+    width: 99%;
     color: var(#083148);
     color: #E75C50;
     font-family: 'Inter', sans-serif;
@@ -987,6 +933,32 @@ section nav ul li a {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .team .team_box .profile {
+        width: calc(100% - 40px); /* Ajusta a largura para ocupar toda a largura da tela com margem entre as caixas */
+        max-width: none; /* Remove a largura máxima */
+    }
+}
 
 
 /* --------------------------------------------------------------------- */
@@ -1102,9 +1074,92 @@ display: none;
     text-decoration: none;
     color: #fff;
     position: relative;
-    left: 53%;
-    bottom: 50px;
+    left: 0%;
+    bottom: -35px;
 }
+
+
+/* -------------------------------------------------------------------- */
+
+
+
+
+/* main */
+.home{
+    width: 100%;
+    height: 100vh;
+    padding: 70px 50px;
+    
+}
+
+.home .home_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.home .home_main .image img{
+    display: none;
+}
+
+.home .home_main .img img{
+display: none;
+}
+
+.home .home_main .home_text h1 span{
+    color: var(--border);
+    font-family: mv boli;
+}
+
+.home .home_main .home_text h1{
+    margin-top: 55px;
+    font-size: 50px;
+    
+    align-items: center;
+    width: 400px;
+}
+
+.home .home_main .home_text h3{
+    font-size: 55px;
+    margin: 0 0 50px 0;
+    margin-right: 90px;
+
+}
+
+.home .home_main .home_text h3 span{
+    color: var(--border);
+    margin-right: 15px;
+    font-family: mv boli;
+}
+
+
+
+.home .home_main .home_text p{
+    font-size: 18px;
+    align-items: center;
+    width: 400px;
+}
+
+/* Botão do "peça agora" */
+.home .home_btn{
+    background: var(--border);
+    padding: 12px 25px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    left: 0%;
+    bottom: -35px;
+}
+
+
+
+
+
+
+
+
+
 
 /* ------------------------------------------------------------------------------------------------------------------- */
 /* Menu */
@@ -1169,8 +1224,41 @@ display: none;
       margin-top: 140px;
     }
 
-    /* ------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+    .review{
+        width: 100%;
+        height: 120%;
+    }
+
+    .review h1{
+        font-size: 35px;
+        margin-top: -160px;
+    }
+
+    .review .review_box {
+        width: 95%;
+        gap: 10px;
+        display: block;
+        margin-right: -30px;
+      }
+    
+      
+
+
+     -------------------------------------------------------------------------------------------------------------- */
     /* Pedido */
+
+    .order{
+        width: 100%;
+        height: 120%;
+    }
     
     .order h1 {
       font-size: 35px;
@@ -1180,6 +1268,7 @@ display: none;
       flex-direction: column;
     }
     .order .order_main .order_image img{
+        margin-top: 100px;
         width: 300px;
     }
     .order .order_main form {
@@ -1194,50 +1283,27 @@ display: none;
     /* time */
 
     .team{
-        width: 100%;
+        padding: 3rem 0;
+        margin-top: 100px;
+    }
+    .team .team_box {
         flex-direction: column;
-    }
-    
-    .team h1 {
-      font-size: 35px;
-    }
-    
-    .team.team_box {
-        grid-template-columns: 0,5fr;
-        gap: 5px;
         display: block;
-        width: 300px;
-        height: 100px;
-    }
-    
-    .team.team_box.one{
-        display: block;
-    }
-    
-    .team.team_box.two{
-        display: block;
-    }
-    
-    .team.team_box.profile {
-        width: 100%;
-        height: 300px;
-        border-radius: 50%;
-    }
-    
-    .team.team_box.profile img {
-        border-radius: 50%;
-        width: 200px;
-        height: 200px;
-    }
-    
-    .team.team_box.profile.info {
-      top: 50%;
-      transform: translateY(-50%);
+        margin-right: -30px;
     }
 
     /* ----------------------------------------------------------------------------------------------------------------------- */
     /* footer */
+    footer{
+        padding: 0rem 0;
+        margin-top: 950px;
+    }
 
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+
+    }
     
   }
 
@@ -1256,13 +1322,3 @@ display: none;
     }
     
 }
-
- /* ----------------------------------------------------------------------------------------------------------------------- */
-    /* review */
-
-    @media screen and (max-width: 768px) {
-        .review .review_box .review_card {
-            width: calc(100% - 30px);
-            margin: 0 15px 30px;
-        }
-    }
