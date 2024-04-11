@@ -16,22 +16,73 @@
 
 
 <!-- Menu responsivo -->
-    <section id="Home">
-        <nav>
+
+        <!-- <header id="header">
             <div class="logo">
                 <a href="#Home"><img src="./img/logo.ham.png" class="menu-icon"></a>
             </div>
-
-            <ul class="nav_menu">
+            <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#populares">Populares</a></li>
                 <li><a href="#Menu">Menu</a></li>
-                <li><a href="#Combo">Combos</a></li>
+                <li><a href="#Combo">Combos</a></li>    
                 <li><a href="#About">Quem somos</a></li>
                 <li><a href="#Review">Avaliações</a></li>
                 <li><a href="#Pedido">Peça agora</a></li>
                 <li><a href="#team">Nosso Time</a></li>
             </ul>
+
+                <div class="icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </nav>
+        </header>
+
+        <script>
+
+            const btnMobile = document.getElementById('btn-mobile');
+
+            function toggleMenu(event) {
+            if (event.type === 'touchstart') event.preventDefault();
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+            const active = nav.classList.contains('active');
+            event.currentTarget.setAttribute('aria-expanded', active);
+            if (active) {
+                event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+            } else {
+                event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+            }
+            }
+
+            btnMobile.addEventListener('click', toggleMenu);
+            btnMobile.addEventListener('touchstart', toggleMenu);
+
+        </script> -->
+
+    <section id="Home">
+        <nav>
+            <div class="logo">
+                <a href="#Home"><img src="./img/logo.ham.png" class="menu-icon"></a>
+            </div>
+            <ul class="nav_menu">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#populares">Populares</a></li>
+                <li><a href="#Menu">Menu</a></li>
+                <li><a href="#Combo">Combos</a></li>    
+                <li><a href="#About">Quem somos</a></li>
+                <li><a href="#Review">Avaliações</a></li>
+                <li><a href="#Pedido">Peça agora</a></li>
+                <li><a href="#team">Nosso Time</a></li>
+            </ul>
+         
+
 
             <div class="icon">
                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -39,7 +90,7 @@
                 <i class="fa-solid fa-cart-shopping"></i>
             </div>
             
-        </nav>
+        </nav> 
 
 
         
