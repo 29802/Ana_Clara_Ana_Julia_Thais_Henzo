@@ -652,7 +652,7 @@ section nav .icon i:hover{
 
 .team{
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     background-image: url(img/bg1.jpg);
     background-size: cover;
     background-position: center;
@@ -683,7 +683,7 @@ section nav .icon i:hover{
 }
 
 .team .team_box{
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -774,6 +774,8 @@ h3{
 
 footer {
     width: 100%;
+    
+    
     color: var(#083148);
     color: #E75C50;
     font-family: 'Inter', sans-serif;
