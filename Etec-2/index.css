@@ -509,7 +509,9 @@ section nav .icon i:hover{
 .review .review_box{
     width: 95%;
     margin: 70px auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2px;
 }
 
 .review .review_box .review_card{
@@ -797,7 +799,7 @@ footer h3{
 }
 
 footer {
-    width: 99%;
+    width: 100%;
     color: var(#083148);
     color: #E75C50;
     font-family: 'Inter', sans-serif;
@@ -820,6 +822,7 @@ footer {
 
 #footer_contacts h1 {
     margin-bottom: 0.75rem;
+
 }
 
 #footer_social_media {
@@ -893,10 +896,6 @@ section nav ul li a {
 /* Media 991px */
 @media screen and (max-width: 991px) {
 
-    section{
-        padding:10px 4% ;
-        z-index: 1000;
-    }
     
     section .logo{
         display: initial;
@@ -939,51 +938,6 @@ section nav ul li a {
         top: 100%;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-/* 
-    section nav {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 1000;
-    }    
-
-    section nav ul {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: var(--menu);
-        z-index: 1000;
-        flex-direction: column;
-        align-items: center;
-    }    
-
-    section nav ul.active {
-        display: flex;
-    }    
-
-    section nav ul li {
-        margin: 7px 0;
-    }    
-
-    section nav.icon {
-        display: none;
-
-    }     */
-
 /* ---------------------------------------------------------------------------------------------------------------------------------------- */    
     
     
@@ -1002,12 +956,9 @@ section nav ul li a {
         
     }
     
-    .home .home_main .image img{
-        display: none;
-    }
-    
+
     .home .home_main .img img{
-    display: none;
+        display: none;
     }
     
     .home .home_main .home_text h1 span{
@@ -1018,23 +969,10 @@ section nav ul li a {
     .home .home_main .home_text h1{
         margin-top: 55px;
         font-size: 50px;
-        
         align-items: center;
         width: 400px;
     }
     
-    .home .home_main .home_text h3{
-        font-size: 55px;
-        margin: 0 0 50px 0;
-        /* margin-right: 90px; */
-    
-    }
-    
-    .home .home_main .home_text h3 span{
-        color: var(--border);
-        /* margin-right: 15px; */
-        font-family: mv boli;
-    }
     
     
     
@@ -1078,32 +1016,16 @@ section nav ul li a {
     display: none;
 }    
 
-.about .about_main .img img{
-display: none;    
-}
-
-.about .about_main .about_text h1 span{
-    color: var(--border);
-    font-family: mv boli;
-}    
-
-.about .about_main .about_text h1{
-    margin-top: 55px;
-    font-size: 55px;
-    /* margin-bottom: 10px;
-    margin-right: 50px; */
-}    
 
 .about .about_main .about_text h3{
     font-size: 55px;
     margin: 0 0 50px 0;
-    /* margin-right: 90px; */
+    
 
 }    
 
 .about .about_main .about_text h3 span{
     color: var(--border);
-    /* margin-right: 15px; */
     font-family: mv boli;
 }    
 
@@ -1211,9 +1133,13 @@ display: none;
     }
 
     .review .review_box {
-        width: 95%;
+        width: 100%;
         gap: 10px;
-        display: block;
+        margin: 30px auto;
+        margin-right: -60px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2px;
       }
     
       
@@ -1259,7 +1185,7 @@ display: none;
     .team .team_box {
         flex-direction: column;
         display: block;
-
+        margin-left: 60px;
         margin-top: -40px;
     }
 
